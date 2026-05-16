@@ -1,0 +1,26 @@
+uploads = []
+outputs = []
+
+[[generated]]
+id = "FYNeHrSs7pzOW2JyxCPBc"
+uri = "file://artifacts/mashall/src/assets/images/hero.png"
+type = "image"
+title = "Warm community health center hero"
+
+[[generated]]
+id = "PVn7l2uZX9owmrezvQfm5"
+uri = "file://artifacts/mashall/src/assets/images/community.png"
+type = "image"
+title = "Community mental health group"
+
+[[generated]]
+id = "IjveL2PeUBDI6s3C7ETm4"
+uri = "file://artifacts/mashall/src/assets/images/livelihoods.png"
+type = "image"
+title = "Skills training livelihoods"
+
+[[generated]]
+id = "YNuSa02VOSQB_GzGHEjIH"
+uri = "file://artifacts/mashall/src/assets/images/partnership.png"
+type = "image"
+title = "Professional team meeting"

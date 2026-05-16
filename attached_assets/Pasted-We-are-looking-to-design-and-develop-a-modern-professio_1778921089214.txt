@@ -1,0 +1,452 @@
+We are looking to design and develop a modern, professional, emotionally engaging website for our NGO:
+
+MASHALL
+Mental And Social Health for ALL
+
+The website should feel:
+
+Human-centered
+Modern and minimal
+Emotionally warm yet professional
+Trustworthy and impact-driven
+Accessible and mobile responsive
+Clean with smooth animations and engaging storytelling
+
+The overall design aesthetic should combine:
+
+Public health professionalism
+Modern NGO storytelling
+Community empowerment visuals
+Mental wellness inspired calmness
+
+The website should avoid looking overly corporate or clinical. Instead, it should feel hopeful, inclusive, and community-oriented.
+
+Brand Identity & Visual Direction
+
+Please use the attached MASHALL logo as the primary visual identity reference for the entire website. The website’s branding, illustrations, UI accents, animations, and overall mood should align closely with the logo’s soft, community-oriented, and hopeful aesthetic.
+
+The logo combines themes of:
+
+Mental health
+Community support
+Capacity building
+Collaboration
+Research and systems strengthening
+
+The visual identity should feel:
+
+Warm
+Human-centered
+Inclusive
+Calm
+Modern
+Hopeful
+Social-impact driven
+
+Avoid dark, overly clinical, or corporate-looking themes.
+
+Official Color Palette (Extracted from Logo)
+Primary Brand Colors
+MASHALL Teal
+HEX: #168A84
+Usage: Headers, navigation, buttons, icons, highlights
+Soft Green
+HEX: #9BCB63
+Usage: Secondary buttons, cards, backgrounds, positive messaging
+Supporting Accent Colors
+Orange
+HEX: #EE6C2D
+Usage: Icons, infographics, hover accents, CTA highlights
+Coral Red
+HEX: #DE4B4B
+Usage: Important statistics, visual emphasis, animated counters
+Golden Yellow
+HEX: #E9A52A
+Usage: Partnership/collaboration sections, subtle accents
+Neutral Background Colors
+Warm Cream Background
+HEX: #ECE6D7
+Usage: Main page backgrounds
+Soft Off-White
+HEX: #F8F7F2
+Usage: Section backgrounds/cards
+Light Grey
+HEX: #EEF1F3
+Usage: Alternate sections and subtle dividers
+Typography
+
+Please use modern, clean, and accessible fonts:
+
+Headings
+Poppins
+or
+Montserrat
+Body Text
+Inter
+or
+Open Sans
+
+Typography should feel:
+
+Friendly
+Professional
+Easy to read
+Modern and minimal
+Visual & UI Style
+
+The website should visually reflect the logo’s design language.
+
+Use:
+
+Rounded cards and containers
+Soft shadows
+Smooth curves and flowing sections
+Clean iconography
+Community-centered illustrations
+Subtle gradients inspired by the logo colors
+Minimal but engaging animations
+Soft hover interactions
+Scroll-triggered transitions
+
+The UI should feel calm and breathable with generous spacing and a modern NGO storytelling aesthetic.
+
+Animation & Graphic Direction
+
+Animations should feel smooth and purposeful rather than flashy.
+
+Suggested elements:
+
+Animated statistics counters
+Floating icons
+Interactive infographic cards
+Gentle motion graphics
+Scroll fade-ins
+Hover elevation effects
+Animated pathways/connections between sections
+
+Graphics and illustrations should focus on:
+
+Community support
+Mental wellness
+Inclusion
+Collaboration
+Education
+Empowerment
+Social connection
+
+The website should contain the following pages:
+
+Home / Introduction Page
+Our Model
+Our Team
+Get Involved
+Contact Us
+1. HOME / INTRODUCTION PAGE
+
+This should be the main landing page and must have strong storytelling and engaging visuals.
+
+Hero Section
+
+Large modern hero banner with:
+
+Impactful imagery/illustration representing community mental health in Pakistan
+Soft animations
+Clear CTA buttons:
+“Learn More”
+“Get Involved”
+Main Introduction Text
+
+Display the following prominently:
+
+“MASHALL works to make mental health care accessible and stigma-free by integrating services into communities, schools, and health systems across Pakistan.”
+
+Vision Section
+Vision
+
+A society where mental health is respected, supported, and accessible for all.
+
+Mission Section
+Mission
+
+To promote mental and social wellbeing through awareness, access to care, capacity building, and advocacy.
+
+Chairperson’s Message
+
+Include a professionally designed section with image placeholder and elegant quote styling.
+
+Content:
+
+“At MASHALL, our work is grounded in the belief that communities are not just recipients of care—they are central to creating change. Health systems become stronger when they listen to people, respect experiences, and respond to realities.
+
+Mental health requires approaches beyond services, addressing dignity, inclusion, and social justice. MASHALL reflects this vision by combining community engagement with evidence-based care.
+
+What gives me confidence is the collective strength of our team, partners, and communities. Together, we are working towards a future where mental health is understood, supported, and integrated into everyday life.”
+
+— Dr. Kausar S. Khan, Chairperson
+
+CEO Message
+
+Similarly styled section with modern card layout and image placeholder.
+
+Content:
+
+“At MASHALL, we believe mental health is a human issue touching every family. In Pakistan, many face challenges without access to care, support, or understanding. The gap is not only in services, but also in awareness, inclusion, and opportunity.
+
+Our work brings mental health care closer to communities, creating pathways for early help, dignity, and inclusion. This includes clinical care, psychosocial support, community engagement, and opportunities for social and economic inclusion.
+
+We believe sustainable impact is only possible through partnerships. By working with government, development partners, and communities, we build scalable, inclusive, lasting systems. Our commitment remains clear: to ensure mental health care reaches those who need it most.”
+
+— Jawaid Mehmood Shah, CEO
+
+Pakistan Mental Health Statistics Section
+
+This section should be highly engaging with:
+
+Animated counters
+Interactive infographics
+Motion graphics
+Visual storytelling
+Scroll-triggered animations
+
+Use modern infographic design.
+
+Include these statistics:
+
+Statistics
+“1 in 4 people in Pakistan suffer from mental health challenges.”
+“24 million people in Pakistan require psychiatric assistance.”
+“Mental disorders account for over 4% of Pakistan’s total disease burden.”
+“Pakistan has only 0.19 psychiatrists per 100,000 people.”
+
+Designer should creatively visualize these statistics using:
+
+Animated charts
+Human-centered illustrations
+Interactive number counters
+Map-based visuals of Pakistan
+Gradient animated cards
+
+This section should create emotional impact without feeling overwhelming.
+
+2. OUR MODEL PAGE
+
+This page should visually present the 5 core pillars of MASHALL.
+
+Use:
+
+Modern cards
+Icons/illustrations
+Hover animations
+Interactive layouts
+Alternating section designs
+Timeline or ecosystem-inspired visuals
+
+Each pillar should have its own dedicated graphic.
+
+1. Capacity Building
+
+“Empowering local stakeholders to become agents of change through comprehensive training programs. We believe sustainable mental health systems are built from within communities, not imposed from outside.”
+
+Suggested visuals:
+
+Training workshops
+Community leaders
+Educational graphics
+2. Community Mental Health
+
+“Moving care from institutions to the heart of the community for accessible, sustainable, and dignified mental health support.”
+
+Suggested visuals:
+
+Community outreach
+Family/community care
+Local support systems
+3. Livelihoods & Socio-Economic Empowerment
+
+“Breaking the cycle where poverty and mental illness intersect through economic opportunity, skills training, and sustainable income generation.”
+
+Suggested visuals:
+
+Economic empowerment
+Skills training
+Social inclusion
+4. Research & Policy Advocacy
+
+“Building an evidence base to influence national priorities and create sustainable, government-supported mental health systems.”
+
+Suggested visuals:
+
+Research dashboards
+Policy discussions
+Data visualization
+5. Collaborations & Partnerships
+
+“Ensuring long-term sustainability through strategic partnerships across government, corporate, academic, and civil society sectors.”
+
+Suggested visuals:
+
+Partnership networks
+Collaboration ecosystem
+Connected organizations
+3. OUR TEAM PAGE
+
+This page should feel elegant, professional, and trustworthy.
+
+Use:
+
+Professional profile cards
+Circular profile images/placeholders
+Hover animations
+Team categorization
+Clean spacing and typography
+Board Members
+Chairperson
+Kausar S. Khan
+
+Over four decades advancing health equity, gender inclusion, and community empowerment in Pakistan and internationally. A visionary leader shaping MASHALL's strategic direction.
+
+Board Members
+Zafar Ali Dehraj
+
+25+ years in public health, mental health, governance. Led transformative initiatives with government and international partners, ensuring accountable and impact-driven programs.
+
+Huma Halepoto
+
+12+ years in mental health, social protection, inclusive service delivery. Worked with World Bank, UNDP, USAID, Australian Aid — strengthening community resilience.
+
+Management Team
+Jawaid Mehmood Shah
+
+Chief Executive Officer (CEO)
+
+Mental health and social development leader with extensive experience designing and scaling community-based programs across Pakistan. Spearheads strategic growth and operational excellence.
+
+Dr. Anjum Fatima
+
+Capacity Building, M&E & Research Lead
+
+25+ years in health systems strengthening, monitoring & evaluation, and evidence-based programming — ensuring data-driven excellence.
+
+Dr. Zahoor Ahmed
+
+Community Mental Health Lead
+
+Psychiatrist with deep expertise in community-based mental health care, psychosocial support, and clinical strategy.
+
+Mohammad Aayan
+
+Finance & Sustainability Lead
+
+Strategic financial oversight, transparency, long-term sustainability, and resource optimization.
+
+Talha Hamid
+
+Media & Communications Lead
+
+Graphic designer and brand strategist, amplifying MASHALL's voice for mental health awareness and community engagement.
+
+Muhammad Uris
+
+Business Development Lead
+
+Strategic partnerships, growth acceleration, and resource mobilization to expand MASHALL's reach.
+
+External Advisors
+Muhammad Zaid
+
+Chartered Accountant
+
+Nisar ul Haq
+
+Tax and Company Advisor
+
+4. GET INVOLVED PAGE
+
+This page should contain 3 interactive sections/cards with engaging CTA buttons.
+
+1. Donate Now
+
+Button should redirect to a dedicated page containing:
+
+Email: info@mashall.org
+Short impact message about how donations support mental health access, community outreach, awareness, and sustainability.
+2. Become a Partner
+
+Button should redirect to a dedicated page containing:
+
+Email: info@mashall.org
+Short message about strategic partnerships and collaborative impact.
+3. Volunteer
+
+This should contain:
+
+Small modern form collecting:
+Name
+Email
+Phone Number
+Message/Interest
+
+Upon submission:
+
+Show confirmation message:
+“Thank you for your interest. Our team will contact you soon.”
+Form responses should be sent to:
+admin@mashall.org
+
+Use modern form styling with validation and animations.
+
+5. CONTACT US PAGE
+
+Minimal, clean, and easy to use.
+
+Include:
+
+Contact form with:
+Name
+Email
+Message
+
+Form submissions should redirect/send to:
+
+info@mashall.org
+
+Also display:
+
+info@mashall.org for general inquiries
+careers@mashall.org for careers
+
+Optional additions:
+
+Embedded map
+Social media placeholders
+FAQ accordion section
+Technical Requirements
+
+The website should:
+
+Be fully mobile responsive
+Be SEO optimized
+Have fast loading speed
+Include accessibility considerations
+Use smooth transitions and modern animations
+Be easy to update through CMS if possible
+Have secure form handling
+Include optimized images and assets
+
+Preferred technologies:
+
+React / Next.js preferred
+Tailwind CSS preferred
+Framer Motion for animations
+Modern responsive UI framework
+Overall Creative Direction
+
+The website should emotionally communicate:
+
+Hope
+Dignity
+Community
+Accessibility
+Human connection
+Trust
+Social impact

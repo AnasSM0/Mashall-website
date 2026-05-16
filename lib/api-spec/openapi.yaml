@@ -3,13 +3,15 @@ info:
   # Do not change the title, if the title changes, the import paths will be broken
   title: Api
   version: 0.1.0
-  description: API specification
+  description: MASHALL NGO website API
 servers:
   - url: /api
     description: Base API path
 tags:
   - name: health
     description: Health operations
+  - name: forms
+    description: Form submission operations
 paths:
   /healthz:
     get:
@@ -24,6 +26,57 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/HealthStatus"
+
+  /contact:
+    post:
+      operationId: submitContact
+      tags: [forms]
+      summary: Submit contact form
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/ContactInput"
+      responses:
+        "201":
+          description: Contact submission created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FormResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
+  /volunteer:
+    post:
+      operationId: submitVolunteer
+      tags: [forms]
+      summary: Submit volunteer form
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/VolunteerInput"
+      responses:
+        "201":
+          description: Volunteer submission created
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/FormResponse"
+        "400":
+          description: Validation error
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/ErrorResponse"
+
 components:
   schemas:
     HealthStatus:
@@ -34,3 +87,49 @@ components:
       required:
         - status
 
+    ContactInput:
+      type: object
+      required: [name, email, message]
+      properties:
+        name:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        message:
+          type: string
+          minLength: 1
+
+    VolunteerInput:
+      type: object
+      required: [name, email, phone, message]
+      properties:
+        name:
+          type: string
+          minLength: 1
+        email:
+          type: string
+          format: email
+        phone:
+          type: string
+          minLength: 1
+        message:
+          type: string
+          minLength: 1
+
+    FormResponse:
+      type: object
+      required: [success, message]
+      properties:
+        success:
+          type: boolean
+        message:
+          type: string
+
+    ErrorResponse:
+      type: object
+      required: [error]
+      properties:
+        error:
+          type: string

@@ -1,0 +1,31 @@
+kind = "web"
+previewPath = "/"
+title = "MASHALL Website"
+version = "1.0.0"
+id = "artifacts/mashall"
+router = "path"
+
+[[integratedSkills]]
+name = "react-vite"
+version = "1.0.0"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 23565
+
+[services.development]
+run = "pnpm --filter @workspace/mashall run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/mashall", "run", "build" ]
+publicDir = "artifacts/mashall/dist/public"
+serve = "static"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "23565"
+BASE_PATH = "/"
