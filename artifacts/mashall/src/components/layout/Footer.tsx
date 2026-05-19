@@ -1,5 +1,6 @@
 import { Link } from "wouter";
-import { Heart, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import mashallLogo from "@assets/mashall-logo.jpg";
 
 export function Footer() {
   return (
@@ -8,10 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-6">
-              <Heart className="h-8 w-8 text-primary" strokeWidth={2.5} />
-              <span className="font-display text-2xl font-bold text-foreground tracking-tight">
-                MASHALL
-              </span>
+              <img
+                src={mashallLogo}
+                alt="MASHALL Logo"
+                className="h-14 w-auto"
+              />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
               Mental And Social Health for ALL. Making mental health care accessible, stigma-free, and community-centered across Pakistan.
@@ -102,7 +104,7 @@ export function Footer() {
             </ul>
           </div>
         </div>
-        
+
         <div className="border-t mt-12 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-sm text-muted-foreground">
             &copy; {new Date().getFullYear()} MASHALL NGO. All rights reserved.

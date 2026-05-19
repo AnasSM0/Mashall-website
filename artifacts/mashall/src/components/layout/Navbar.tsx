@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Heart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import mashallLogo from "@assets/mashall-logo.jpg";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -23,10 +24,11 @@ export function Navbar() {
         <div className="flex h-20 items-center justify-between">
           <div className="flex items-center gap-2">
             <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
-              <Heart className="h-8 w-8 text-primary" strokeWidth={2.5} />
-              <span className="font-display text-2xl font-bold text-foreground tracking-tight">
-                MASHALL
-              </span>
+              <img
+                src={mashallLogo}
+                alt="MASHALL Logo"
+                className="h-12 w-auto"
+              />
             </Link>
           </div>
 
