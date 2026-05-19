@@ -8,6 +8,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import heroImg from "@/assets/images/hero.png";
 import kausarKhan from "@assets/kausar-khan.png";
 import jawaidShah from "@assets/jawaid-shah.jpg";
+import { FiveBarsAccent } from "@/components/FiveBars";
 
 const FADE_IN = {
   hidden: { opacity: 0, y: 30 },
@@ -61,8 +62,16 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Five Bars Divider */}
+      <div className="bg-card pt-16 pb-4 flex flex-col items-center gap-3">
+        <FiveBarsAccent />
+        <p className="text-xs font-medium tracking-widest uppercase text-muted-foreground/60 mt-2 font-display">
+          Five Pillars. One Mission.
+        </p>
+      </div>
+
       {/* Statistics Section */}
-      <section className="py-24 bg-card">
+      <section className="py-16 bg-card">
         <div className="container mx-auto px-4 md:px-8">
           <motion.div
             initial="hidden"

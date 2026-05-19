@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import mashallLogo from "@assets/mashall-logo-nobg.png";
+import { FiveBarsStrip } from "@/components/FiveBars";
 
 export function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -85,6 +86,7 @@ export function Navbar() {
           </nav>
         </div>
       )}
+      <FiveBarsStrip />
     </header>
   );
 }
