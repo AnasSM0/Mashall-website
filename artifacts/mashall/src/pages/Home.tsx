@@ -1,11 +1,13 @@
 import { Link } from "wouter";
 import { motion } from "framer-motion";
-import { ArrowRight, Users, Activity, Target, Shield, HeartHandshake } from "lucide-react";
+import { ArrowRight, Target, HeartHandshake } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
 import { AnimatedCounter } from "@/components/AnimatedCounter";
 
 import heroImg from "@/assets/images/hero.png";
+import kausarKhan from "@assets/kausar-khan.png";
+import jawaidShah from "@assets/jawaid-shah.jpg";
 
 const FADE_IN = {
   hidden: { opacity: 0, y: 30 },
@@ -23,16 +25,16 @@ export default function Home() {
       {/* Hero Section */}
       <section className="relative min-h-[90vh] flex items-center pt-20 pb-32 overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img 
-            src={heroImg} 
-            alt="Warm community health center" 
+          <img
+            src={heroImg}
+            alt="Warm community health center"
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/80 to-background/30" />
         </div>
-        
+
         <div className="container relative z-10 mx-auto px-4 md:px-8">
-          <motion.div 
+          <motion.div
             initial="hidden"
             animate="visible"
             variants={STAGGER}
@@ -62,7 +64,7 @@ export default function Home() {
       {/* Statistics Section */}
       <section className="py-24 bg-card">
         <div className="container mx-auto px-4 md:px-8">
-          <motion.div 
+          <motion.div
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
@@ -75,7 +77,7 @@ export default function Home() {
               { num: 4, suffix: "%", text: "of Pakistan's total disease burden is mental disorders", color: "text-[#EE6C2D]" },
               { num: 0.19, suffix: "", text: "psychiatrists per 100,000 people in Pakistan", decimals: 2, color: "text-[#E9A52A]" },
             ].map((stat, i) => (
-              <motion.div key={i} variants={FADE_IN} className="bg-background rounded-3xl p-8 shadow-sm border border-border/50 flex flex-col hover-elevate transition-all duration-300">
+              <motion.div key={i} variants={FADE_IN} className="bg-background rounded-3xl p-8 shadow-sm border border-border/50 flex flex-col hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
                 <h3 className={`text-5xl md:text-6xl font-bold font-display mb-4 ${stat.color}`}>
                   <AnimatedCounter end={stat.num} suffix={stat.suffix} decimals={stat.decimals} />
                 </h3>
@@ -92,7 +94,7 @@ export default function Home() {
       <section className="py-24 bg-background">
         <div className="container mx-auto px-4 md:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
-            <motion.div 
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -108,7 +110,7 @@ export default function Home() {
               </p>
             </motion.div>
 
-            <motion.div 
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -136,7 +138,8 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-            <motion.div 
+            {/* Chairperson */}
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -144,8 +147,12 @@ export default function Home() {
               className="bg-background rounded-3xl p-8 md:p-12 shadow-sm border border-border/50"
             >
               <div className="flex items-center gap-6 mb-8">
-                <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center shrink-0 border-2 border-primary/20">
-                  <span className="text-2xl font-bold text-muted-foreground font-display">KK</span>
+                <div className="w-20 h-20 rounded-full shrink-0 border-2 border-primary/20 overflow-hidden bg-muted">
+                  <img
+                    src={kausarKhan}
+                    alt="Dr. Kausar S. Khan"
+                    className="w-full h-full object-cover object-[center_15%]"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold font-display text-foreground">Dr. Kausar S. Khan</h3>
@@ -157,7 +164,8 @@ export default function Home() {
               </blockquote>
             </motion.div>
 
-            <motion.div 
+            {/* CEO */}
+            <motion.div
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}
@@ -165,12 +173,16 @@ export default function Home() {
               className="bg-background rounded-3xl p-8 md:p-12 shadow-sm border border-border/50"
             >
               <div className="flex items-center gap-6 mb-8">
-                <div className="w-20 h-20 rounded-full bg-muted flex items-center justify-center shrink-0 border-2 border-accent/20">
-                  <span className="text-2xl font-bold text-muted-foreground font-display">JS</span>
+                <div className="w-20 h-20 rounded-full shrink-0 border-2 border-[#EE6C2D]/20 overflow-hidden bg-muted">
+                  <img
+                    src={jawaidShah}
+                    alt="Jawaid Mehmood Shah"
+                    className="w-full h-full object-cover object-[center_12%]"
+                  />
                 </div>
                 <div>
                   <h3 className="text-2xl font-bold font-display text-foreground">Jawaid Mehmood Shah</h3>
-                  <p className="text-accent font-medium">CEO</p>
+                  <p className="text-[#EE6C2D] font-medium">Chief Executive Officer</p>
                 </div>
               </div>
               <blockquote className="text-lg text-muted-foreground leading-relaxed font-light italic">

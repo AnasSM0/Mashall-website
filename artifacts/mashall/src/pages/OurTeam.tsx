@@ -22,25 +22,37 @@ const STAGGER = {
   visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
 };
 
-const TEAM = {
+type TeamMember = {
+  name: string;
+  role: string;
+  bio?: string;
+  photo: string | null;
+  initials?: string;
+  facePosition?: string;
+};
+
+const TEAM: { board: TeamMember[]; management: TeamMember[]; advisors: TeamMember[] } = {
   board: [
     {
       name: "Dr. Kausar S. Khan",
       role: "Chairperson",
       bio: "Over four decades advancing health equity, gender inclusion, and community empowerment in Pakistan and internationally. A visionary leader shaping MASHALL's strategic direction.",
-      photo: kausarKhan
+      photo: kausarKhan,
+      facePosition: "object-[center_15%]"
     },
     {
       name: "Zafar Ali Dehraj",
       role: "Board Member",
       bio: "25+ years in public health, mental health, governance. Led transformative initiatives with government and international partners.",
-      photo: zafarDehraj
+      photo: zafarDehraj,
+      facePosition: "object-[center_10%]"
     },
     {
       name: "Huma Halepoto",
       role: "Board Member",
       bio: "12+ years in mental health, social protection, inclusive service delivery. Worked with World Bank, UNDP, USAID, Australian Aid.",
-      photo: humaHalepoto
+      photo: humaHalepoto,
+      facePosition: "object-[center_8%]"
     }
   ],
   management: [
@@ -48,44 +60,51 @@ const TEAM = {
       name: "Jawaid Mehmood Shah",
       role: "Chief Executive Officer",
       bio: "Mental health and social development leader with extensive experience designing and scaling community-based programs across Pakistan.",
-      photo: jawaidShah
+      photo: jawaidShah,
+      facePosition: "object-[center_12%]"
     },
     {
       name: "Dr. Anjum Fatima",
       role: "Capacity Building, M&E & Research Lead",
       bio: "25+ years in health systems strengthening, monitoring & evaluation, and evidence-based programming.",
-      photo: anjumFatima
+      photo: anjumFatima,
+      facePosition: "object-[center_8%]"
     },
     {
       name: "Dr. Zahoor Ahmed",
       role: "Community Mental Health Lead",
       bio: "Psychiatrist with deep expertise in community-based mental health care, psychosocial support, and clinical strategy.",
-      photo: drZahoor
+      photo: drZahoor,
+      facePosition: "object-[center_5%]"
     },
     {
       name: "Mohammad Aayan",
       role: "Finance & Sustainability Lead",
       bio: "Strategic financial oversight, transparency, long-term sustainability, and resource optimization.",
-      photo: muhammadAayan
+      photo: muhammadAayan,
+      facePosition: "object-[center_5%]"
     },
     {
       name: "Talha Hamid",
       role: "Media & Communications Lead",
       bio: "Graphic designer and brand strategist, amplifying MASHALL's voice for mental health awareness.",
-      photo: talhaHamid
+      photo: talhaHamid,
+      facePosition: "object-[center_8%]"
     },
     {
       name: "Muhammad Uris",
       role: "Business Development Lead",
       bio: "Strategic partnerships, growth acceleration, and resource mobilization.",
-      photo: muhammadUris
+      photo: muhammadUris,
+      facePosition: "object-[center_5%]"
     }
   ],
   advisors: [
     {
       name: "Muhammad Zaid",
       role: "Chartered Accountant",
-      photo: muhammadZaid
+      photo: muhammadZaid,
+      facePosition: "object-[center_10%]"
     },
     {
       name: "Nisar ul Haq",
@@ -96,28 +115,27 @@ const TEAM = {
   ]
 };
 
-function TeamCard({ member }: { member: typeof TEAM.board[number] | typeof TEAM.management[number] | typeof TEAM.advisors[number] }) {
-  const m = member as any;
+function TeamCard({ member }: { member: TeamMember }) {
   return (
     <motion.div
       variants={FADE_IN}
       className="bg-card rounded-3xl p-8 border border-border/50 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center text-center"
     >
       <div className="w-28 h-28 rounded-full mb-6 shadow-md border-2 border-primary/20 overflow-hidden bg-muted flex items-center justify-center">
-        {m.photo ? (
+        {member.photo ? (
           <img
-            src={m.photo}
-            alt={m.name}
-            className="w-full h-full object-cover object-top"
+            src={member.photo}
+            alt={member.name}
+            className={`w-full h-full object-cover ${member.facePosition ?? "object-top"}`}
           />
         ) : (
-          <span className="text-3xl font-display font-bold text-muted-foreground">{m.initials}</span>
+          <span className="text-3xl font-display font-bold text-muted-foreground">{member.initials}</span>
         )}
       </div>
-      <h3 className="text-xl font-bold font-display text-foreground mb-1">{m.name}</h3>
-      <p className="text-primary font-medium text-sm mb-4">{m.role}</p>
-      {m.bio && (
-        <p className="text-muted-foreground text-sm leading-relaxed">{m.bio}</p>
+      <h3 className="text-xl font-bold font-display text-foreground mb-1">{member.name}</h3>
+      <p className="text-primary font-medium text-sm mb-4">{member.role}</p>
+      {member.bio && (
+        <p className="text-muted-foreground text-sm leading-relaxed">{member.bio}</p>
       )}
     </motion.div>
   );

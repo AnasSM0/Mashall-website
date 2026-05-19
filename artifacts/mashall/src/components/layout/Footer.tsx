@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Mail, MapPin, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
-import mashallLogo from "@assets/mashall-logo.jpg";
+import mashallLogo from "@assets/mashall-logo-nobg.png";
 
 export function Footer() {
   return (
@@ -8,11 +8,11 @@ export function Footer() {
       <div className="container mx-auto px-4 md:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div className="md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-6">
+            <Link href="/" className="block mb-6">
               <img
                 src={mashallLogo}
                 alt="MASHALL Logo"
-                className="h-14 w-auto"
+                className="h-20 w-auto"
               />
             </Link>
             <p className="text-muted-foreground text-sm leading-relaxed mb-6">
