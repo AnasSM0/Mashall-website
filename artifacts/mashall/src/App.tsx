@@ -10,6 +10,7 @@ import GetInvolved from "@/pages/GetInvolved";
 import Contact from "@/pages/Contact";
 import Donate from "@/pages/Donate";
 import Partner from "@/pages/Partner";
+import Blog from "@/pages/Blog";
 import NotFound from "@/pages/not-found";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/donate" component={Donate} />
       <Route path="/partner" component={Partner} />
+      <Route path="/blog" component={Blog} />
       <Route component={NotFound} />
     </Switch>
   );

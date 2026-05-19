@@ -14,6 +14,7 @@ export function Navbar() {
     { href: "/our-model", label: "Our Model" },
     { href: "/our-team", label: "Our Team" },
     { href: "/get-involved", label: "Get Involved" },
+    { href: "/blog", label: "Blog" },
     { href: "/contact", label: "Contact" },
   ];
 
