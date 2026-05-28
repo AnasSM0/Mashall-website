@@ -3,6 +3,8 @@
 # compiled output
 dist
 public
+artifacts/mashall/public
+artifacts/api-server/public
 tmp
 out-tsc
 *.tsbuildinfo
