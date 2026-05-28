@@ -1,10 +1,10 @@
-import { Router } from "express";
+import { Router, type Request, type Response } from "express";
 import { db, contactSubmissionsTable, volunteerSubmissionsTable } from "@workspace/db";
 import { SubmitContactBody, SubmitVolunteerBody } from "@workspace/api-zod";
 
 const formsRouter = Router();
 
-formsRouter.post("/contact", async (req, res) => {
+formsRouter.post("/contact", async (req: Request, res: Response) => {
   const parsed = SubmitContactBody.safeParse(req.body);
   if (!parsed.success) {
     res.status(400).json({ error: "Invalid request data" });
@@ -20,7 +20,7 @@ formsRouter.post("/contact", async (req, res) => {
   }
 });
 
-formsRouter.post("/volunteer", async (req, res) => {
+formsRouter.post("/volunteer", async (req: Request, res: Response) => {
   const parsed = SubmitVolunteerBody.safeParse(req.body);
   if (!parsed.success) {
     res.status(400).json({ error: "Invalid request data" });

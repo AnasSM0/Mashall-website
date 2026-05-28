@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { ArrowRight, Target, HeartHandshake, Star } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Layout } from "@/components/layout/Layout";
@@ -11,12 +11,12 @@ import jawaidShah from "@assets/jawaid-shah.jpg";
 import pakistanMap from "@assets/pakistan-map-sindh.png";
 import { FiveBarsAccent } from "@/components/FiveBars";
 
-const FADE_IN = {
+const FADE_IN: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const STAGGER = {
+const STAGGER: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.2 } }
 };

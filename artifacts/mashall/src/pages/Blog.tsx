@@ -1,14 +1,14 @@
-import { motion } from "framer-motion";
+import { motion, type Variants } from "framer-motion";
 import { Layout } from "@/components/layout/Layout";
 import { FiveBarsAccent } from "@/components/FiveBars";
 import { BookOpen, Lightbulb, Send } from "lucide-react";
 
-const FADE_IN = {
+const FADE_IN: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
 };
 
-const STAGGER = {
+const STAGGER: Variants = {
   hidden: { opacity: 0 },
   visible: { opacity: 1, transition: { staggerChildren: 0.18 } }
 };
