@@ -1,14 +1,18 @@
 import express, { type Express } from "express";
 import cors from "cors";
 import { type IncomingMessage, type ServerResponse } from "node:http";
-import { pinoHttp } from "pino-http";
+import * as pinoHttpModule from "pino-http";
+import type { HttpLogger, Options as PinoHttpOptions } from "pino-http";
 import router from "./routes";
 import { logger } from "./lib/logger";
 
 const app: Express = express();
+const createPinoHttp = (pinoHttpModule.pinoHttp ?? pinoHttpModule.default) as (
+  options?: PinoHttpOptions<IncomingMessage, ServerResponse>,
+) => HttpLogger<IncomingMessage, ServerResponse>;
 
 app.use(
-  pinoHttp({
+  createPinoHttp({
     logger,
     serializers: {
       req(req: IncomingMessage) {
