@@ -11,6 +11,8 @@ import muhammadAayan from "@assets/muhammad-aayan.png";
 import talhaHamid from "@assets/talha-hamid.png";
 import muhammadUris from "@assets/muhammad-uris.png";
 import muhammadZaid from "@assets/muhammad-zaid.png";
+import nisarUlHaq from "@assets/nisar-ul-haq.jpeg";
+import jansherKhan from "@assets/jansher-khan.jpeg";
 
 const FADE_IN = {
   hidden: { opacity: 0, y: 20 },
@@ -29,9 +31,10 @@ type TeamMember = {
   photo: string | null;
   initials?: string;
   facePosition?: string;
+  objectFit?: "contain" | "cover";
 };
 
-const TEAM: { board: TeamMember[]; management: TeamMember[]; advisors: TeamMember[] } = {
+const TEAM: { board: TeamMember[]; management: TeamMember[] } = {
   board: [
     {
       name: "Dr. Kausar S. Khan",
@@ -97,20 +100,28 @@ const TEAM: { board: TeamMember[]; management: TeamMember[]; advisors: TeamMembe
       bio: "Strategic partnerships, growth acceleration, and resource mobilization.",
       photo: muhammadUris,
       facePosition: "object-[center_5%]"
-    }
-  ],
-  advisors: [
+    },
     {
       name: "Muhammad Zaid",
       role: "Chartered Accountant",
+      bio: "Qualified Chartered Accountant (ACA) with 20+ years of experience in finance, audit, and accounting.",
       photo: muhammadZaid,
       facePosition: "object-[center_10%]"
     },
     {
       name: "Nisar ul Haq",
       role: "Tax and Company Advisor",
-      photo: null,
-      initials: "NH"
+      bio: "Expert in taxation laws, corporate compliance, and financial structuring, ensuring organizational integrity and regulatory excellence.",
+      photo: nisarUlHaq,
+      objectFit: "contain",
+      facePosition: "object-center"
+    },
+    {
+      name: "Jansher Khan",
+      role: "Legal Advisor",
+      bio: "Expert legal counsel specializing in NGO governance, compliance, and advocacy, ensuring MASHALL operates within the highest legal and ethical standards.",
+      photo: jansherKhan,
+      facePosition: "object-[center_10%]"
     }
   ]
 };
@@ -126,7 +137,7 @@ function TeamCard({ member }: { member: TeamMember }) {
           <img
             src={member.photo}
             alt={member.name}
-            className={`w-full h-full object-cover ${member.facePosition ?? "object-top"}`}
+            className={`w-full h-full ${member.objectFit === "contain" ? "object-contain p-1" : "object-cover"} ${member.facePosition ?? "object-top"}`}
           />
         ) : (
           <span className="text-3xl font-display font-bold text-muted-foreground">{member.initials}</span>
@@ -182,30 +193,12 @@ export default function OurTeam() {
             whileInView="visible"
             viewport={{ once: true, margin: "-100px" }}
             variants={STAGGER}
-            className="mb-24"
           >
             <motion.h2 variants={FADE_IN} className="text-3xl font-bold font-display text-foreground mb-10 text-center">
               Management Team
             </motion.h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {TEAM.management.map((member, idx) => (
-                <TeamCard key={idx} member={member} />
-              ))}
-            </div>
-          </motion.div>
-
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-100px" }}
-            variants={STAGGER}
-            className="max-w-2xl mx-auto"
-          >
-            <motion.h2 variants={FADE_IN} className="text-3xl font-bold font-display text-foreground mb-10 text-center">
-              External Advisors
-            </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {TEAM.advisors.map((member, idx) => (
                 <TeamCard key={idx} member={member} />
               ))}
             </div>
