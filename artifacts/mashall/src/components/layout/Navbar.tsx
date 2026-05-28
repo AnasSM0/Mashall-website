@@ -35,19 +35,19 @@ export function Navbar() {
           </div>
 
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center gap-8">
+          <nav className="hidden md:flex items-center gap-5 lg:gap-7">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-sm font-medium transition-colors hover:text-primary ${
+                className={`text-sm font-medium whitespace-nowrap transition-colors hover:text-primary ${
                   location === link.href ? "text-primary font-semibold" : "text-muted-foreground"
                 }`}
               >
                 {link.label}
               </Link>
             ))}
-            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-6">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-white font-semibold rounded-full px-5 whitespace-nowrap">
               <Link href="/donate">Donate Now</Link>
             </Button>
           </nav>
