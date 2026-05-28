@@ -8,6 +8,7 @@ import { AnimatedCounter } from "@/components/AnimatedCounter";
 import heroImg from "@/assets/images/hero.png";
 import kausarKhan from "@assets/kausar-khan.png";
 import jawaidShah from "@assets/jawaid-shah.jpg";
+import pakistanMap from "@assets/pakistan-map-sindh.png";
 import { FiveBarsAccent } from "@/components/FiveBars";
 
 const FADE_IN = {
@@ -28,70 +29,6 @@ const CORE_VALUES = [
   "Community participation and ownership",
 ];
 
-function PakistanMap() {
-  return (
-    <svg
-      viewBox="0 0 360 410"
-      xmlns="http://www.w3.org/2000/svg"
-      className="w-full max-w-sm drop-shadow-xl"
-      aria-label="Map of Pakistan with Sindh highlighted"
-    >
-      {/* Gilgit-Baltistan */}
-      <polygon
-        fill="#C8D8B0"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        points="165,30 185,5 215,0 255,0 295,10 330,30 350,60 340,85 305,75 265,65 235,72 210,62 188,46"
-      />
-      {/* KPK */}
-      <polygon
-        fill="#B5C99A"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        points="50,68 78,35 118,18 165,30 188,46 210,62 200,88 182,112 162,122 140,118 112,104 86,88"
-      />
-      {/* Balochistan */}
-      <polygon
-        fill="#C8D8B0"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        points="0,108 28,65 50,68 86,88 112,104 140,118 152,148 158,185 158,222 150,260 138,298 120,332 98,362 68,390 34,400 8,388 0,360 0,280 0,180"
-      />
-      {/* Punjab */}
-      <polygon
-        fill="#B5C99A"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        points="162,122 182,112 200,88 210,62 235,72 265,65 305,75 340,85 344,118 330,154 315,188 296,212 270,228 244,232 220,226 202,214 158,222 158,185 152,148"
-      />
-      {/* Sindh — highlighted in MASHALL teal */}
-      <polygon
-        fill="#168A84"
-        stroke="white"
-        strokeWidth="2"
-        strokeLinejoin="round"
-        points="158,222 150,260 138,298 124,332 132,368 158,392 192,402 228,400 264,388 294,360 318,320 328,278 316,248 296,232 270,228 244,232 220,226 202,214"
-      />
-      {/* Sindh label */}
-      <text
-        x="230"
-        y="318"
-        textAnchor="middle"
-        fill="white"
-        fontSize="14"
-        fontWeight="700"
-        fontFamily="Poppins, sans-serif"
-        opacity="0.95"
-      >
-        Sindh
-      </text>
-    </svg>
-  );
-}
 
 export default function Home() {
   return (
@@ -301,7 +238,11 @@ export default function Home() {
             </motion.div>
 
             <motion.div variants={FADE_IN} className="flex justify-center">
-              <PakistanMap />
+              <img
+                src={pakistanMap}
+                alt="Map of Pakistan with Sindh province highlighted in teal"
+                className="w-full max-w-md object-contain drop-shadow-2xl"
+              />
             </motion.div>
           </motion.div>
         </div>
